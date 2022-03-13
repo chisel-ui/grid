@@ -1,0 +1,20 @@
+---
+import { getSafeGutter, getSizeValue } from '@chisel-ui/core'
+import './Grid.css'
+import type { CSSLength, LayoutProps, SizesOptions } from '@chisel-ui/core'
+
+export type MinItemWidth = number | CSSLength | SizesOptions
+
+export interface GridProps extends LayoutProps {
+    minItemWidth?: MinItemWidth
+}
+
+const { gutter = '0px', theme = {}, as: Tag = 'div', minItemWidth, style = '', ...props } = Astro.props as GridProps
+
+const maybeGutter = getSafeGutter(theme, gutter)
+const maybeMinItemWidth = getSizeValue(theme, minItemWidth) ?? minItemWidth
+---
+
+<Tag data-chisel-grid {id} style={`--gutter: ${maybeGutter}; --minItemWidth: ${maybeMinItemWidth};${style}`} {...props}>
+    <slot />
+</Tag>

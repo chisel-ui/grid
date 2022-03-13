@@ -1,0 +1,16 @@
+@property --minItemWidth {
+    syntax: "<length-percentage>";
+    inherits: false;
+    initial-value: ${sizes.small};
+}
+
+[data-chisel-grid] {
+    box-sizing: border-box;
+    display: grid;
+    gap: var(--gutter, 0px);
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--minItemWidth, 639px), 100%), 1fr));
+}
+
+[data-chisel-grid] > * {
+    margin: 0;
+}
