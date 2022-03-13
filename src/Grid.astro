@@ -15,6 +15,6 @@ const maybeGutter = getSafeGutter(theme, gutter)
 const maybeMinItemWidth = getSizeValue(theme, minItemWidth) ?? minItemWidth
 ---
 
-<Tag data-chisel-grid {id} style={`--gutter: ${maybeGutter}; --minItemWidth: ${maybeMinItemWidth};${style}`} {...props}>
+<Tag data-chisel-grid style={`--gutter: ${maybeGutter}; --minItemWidth: ${maybeMinItemWidth};${style}`} {...props}>
     <slot />
 </Tag>
