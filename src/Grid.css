@@ -1,9 +1,3 @@
-@property --minItemWidth {
-    syntax: "<length-percentage>";
-    inherits: false;
-    initial-value: ${sizes.small};
-}
-
 [data-chisel-grid] {
     box-sizing: border-box;
     display: grid;

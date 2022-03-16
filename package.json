@@ -1,6 +1,6 @@
 {
     "name": "@chisel-ui/grid",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "chisel-ui grid layout primitive",
     "private": false,
     "type": "module",
