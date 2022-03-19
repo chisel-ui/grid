@@ -1,39 +1,40 @@
 {
-    "name": "@chisel-ui/grid",
-    "version": "0.2.0",
-    "description": "chisel-ui grid layout primitive",
-    "private": false,
-    "type": "module",
-    "files": [
-        "Grid.astro"
-    ],
-    "scripts": {
-        "prepare": "husky install"
-    },
-    "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/chisel-ui/grid.git"
-    },
-    "keywords": [
-        "astro",
-        "grid",
-        "layout"
-    ],
-    "author": "tony-sull <tony.f.sullivan@outlook.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/chisel-ui/grid/issues"
-    },
-    "homepage": "https://github.com/chisel-ui/grid#readme",
-    "devDependencies": {
-        "@chisel-ui/component": "^0.2.0",
-        "@chisel-ui/core": "^0.2.0",
-        "husky": "^7.0.4",
-        "lint-staged": "^12.3.7",
-        "prettier": "^2.6.0",
-        "prettier-plugin-astro": "^0.0.12"
-    }
+	"name": "@chisel-ui/grid",
+	"version": "0.2.0",
+	"description": "chisel-ui grid layout primitive",
+	"private": false,
+	"type": "module",
+	"files": [
+		"Grid.astro"
+	],
+	"scripts": {
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chisel-ui/grid.git"
+	},
+	"keywords": [
+		"astro",
+		"grid",
+		"layout",
+		"primitives"
+	],
+	"author": "tony-sull <tony.f.sullivan@outlook.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/chisel-ui/grid/issues"
+	},
+	"homepage": "https://github.com/chisel-ui/grid#readme",
+	"devDependencies": {
+		"@chisel-ui/component": "^0.2.0",
+		"@chisel-ui/core": "^0.2.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.3.7",
+		"prettier": "^2.6.0",
+		"prettier-plugin-astro": "^0.0.12"
+	}
 }
